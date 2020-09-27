@@ -1,0 +1,2 @@
+class CharacterActionsController < ApplicationController
+end

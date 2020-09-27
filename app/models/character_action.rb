@@ -1,3 +1,3 @@
 class CharacterAction < ApplicationRecord
-  belongs_to: Character
+  belongs_to: character
 end

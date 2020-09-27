@@ -1,11 +1,13 @@
 class UserController < ApplicationController
 
   def index
-    render json: User.all
+    users = User.all
+    render json: users, only: [:id, :username, :password], include: [:character]
   end
 
   def show
     @user = User.find(params[:id])
+    render json: @user
   end
 
 end

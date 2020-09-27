@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_one: Character
+  has_one :character
 end

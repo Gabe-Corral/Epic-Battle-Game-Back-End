@@ -1,4 +1,4 @@
 class Character < ApplicationRecord
-  belongs_to: User
-  has_many: Actions, through: :CharacterAction
+  belongs_to :user
+  has_many :actions, through: :character_action
 end

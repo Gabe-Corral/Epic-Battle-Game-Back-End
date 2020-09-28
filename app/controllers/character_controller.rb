@@ -10,4 +10,17 @@ class CharacterController < ApplicationController
     render json: @character
   end
 
+  def create
+    character = Character.new(character_params)
+    if character.valid?
+      character.save
+    end
+  end
+
+  private
+  def character_params
+    params.require(:character).permit(:name, :img_url, :physical,
+      :magic, :physical_defense, :magic_defense, :user_id)
+  end
+
 end

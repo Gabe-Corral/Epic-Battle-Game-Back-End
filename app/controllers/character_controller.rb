@@ -2,7 +2,8 @@ class CharacterController < ApplicationController
 
   def index
     characters = Character.all
-    render json: characters, only: [:id, :user_id, :name], include: [:user]
+    render json: characters, only: [:id, :user_id, :name, :img_url, :magic,
+      :physical, :magic_defense, :physical_defense  ], include: [:user]
   end
 
   def show

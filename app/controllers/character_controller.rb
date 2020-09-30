@@ -7,8 +7,8 @@ class CharacterController < ApplicationController
   end
 
   def show
-    @character = Character.find(params[:id])
-    render json: @character
+    character = Character.find(params[:id])
+    render json: character
   end
 
   def create

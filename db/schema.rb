@@ -15,15 +15,17 @@ ActiveRecord::Schema.define(version: 2020_09_25_211455) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "actions", force: :cascade do |t|
+  create_table "attacks", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "attack_type"
     t.integer "hit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "character_actions", force: :cascade do |t|
+  create_table "character_attacks", force: :cascade do |t|
+    t.integer "character_id"
+    t.integer "attack_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

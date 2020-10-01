@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :character
   resources :user
   resources :attack
+  resources :character_attack
 end

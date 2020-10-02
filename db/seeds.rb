@@ -16,6 +16,7 @@ Character.create(name: "Thanos",img_url: "https://images-wixmp-ed30a86b8c4ca8877
 Character.create(name: "Bane",img_url:"https://www.uokpl.rs/fpng/f/439-4394061_the-death-battle.png", physical: 9, magic: 0, physical_defense: 9, magic_defense: 0, user_id: User.first.id)
 Character.create(name: "Michael Myers",img_url: "https://bbts1.azureedge.net/images/p/full/2020/08/c87a16c1-01e7-472f-bd52-4989cfbc9bbd.jpg", physical: 8, magic: 5, physical_defense: 8, magic_defense: 5, user_id: User.first.id)
 Character.create(name: "Frieza", img_url: "https://www.uokpl.rs/fpng/f/440-4404199_frieza-download-frieza.png", physical: 8, magic: 7, physical_defense: 8, magic_defense: 6, user_id: User.first.id)
+Character.create(name: "Joker", img_url: "https://i.kym-cdn.com/photos/images/original/001/613/005/3c4.png", physical: 6, magic: 5, physical_defense: 10, magic_defense: 4, user_id: User.first.id)
 
 Attack.create(name: "Physical Attack", attack_type: "Physical", hit: 10)
 Attack.create(name: "Magic Attack", attack_type: "Magic", hit: 10)

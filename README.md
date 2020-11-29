@@ -2,7 +2,7 @@
 
 **Description:**
 
-This is the back-end portion of Pokemon style battle game.
+This is the back-end portion of Pokemon style battle game. You can find the front-end portion [here](https://github.com/Gabe-Corral/Epic-Battle-Game).
 
 **Setup:**
 
